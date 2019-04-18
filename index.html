@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        .tag {
+            background-color: orange;
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 100px;
+            clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* this gets cut by the clip path so we need to set it in parent */
+        }
+
+        .tag-wrap {
+            filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="tag-wrap">
+            <div class="tag">
+                TAG
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
